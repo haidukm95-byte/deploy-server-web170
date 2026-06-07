@@ -16,7 +16,7 @@ console.error("Name=>", process.env.NAME);
 
 app.get("/me/:name", (req, res) => {
   console.error("Name=>", req.params.name);
-  res.json({ msg: `hello from server,  my name is ${req.params.name}` });
+  res.json({ msg: `hello from server, this is me, my name is ${req.params.name}` });
 });
 
 app.get("/welcome", (req, res) => {
